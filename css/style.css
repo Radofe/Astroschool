@@ -1,0 +1,238 @@
+* {
+    font-family: 'Buenos Aires';
+}
+
+:root {
+    --bg: #05011A;
+    --planet: #FFB100;
+    --purple: #8E435A;
+}
+
+/* CUSTOMIZANDO SCROLLBAR  */
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: var(--bg);
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    border-radius: 10px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white;
+}
+
+html,
+body {
+    scroll-behavior: smooth !important;
+    overflow-x: hidden;
+    background-image: url("../imgs/bg.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+body {
+    overflow: hidden;
+}
+
+.bannerSection {
+    height: 100vh;
+    width: 100vw;
+    padding-block: 10rem;
+}
+
+.bannerSection .banner {
+    max-width: 110%;
+    animation: float 10s infinite;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(7.8px);
+    padding: 50px;
+}
+
+.glass h1 {
+    font-size: 4rem;
+}
+
+.glass h4 {
+    font-size: 2rem;
+}
+
+.releaseButton {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(-45deg, var(--bg), var(--planet), var(--purple));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 8px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.releaseButton:hover {
+    transform: scale(1.025);
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#animation-container-arrow_animation svg {
+    max-width: 100px;
+    transform: rotate(90deg) !important;
+}
+
+.flex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#about .glass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about p b {
+    color: var(--planet);
+}
+
+#animation-container-rocket {
+    display: flex;
+    justify-content: end;
+}
+
+#animation-container-rocket svg {
+    max-width: 400px;
+    margin-left: auto;
+}
+
+.carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    display: block;
+    max-width: 350px;
+    object-fit: contain;
+    border-radius: 25px;
+    margin-right: 50px;
+}
+
+.carousel-cell p {
+    max-width: 350px;
+}
+
+
+.inputMail {
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.3);
+    background-color: transparent;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    min-width: 350px;
+}
+
+.buttonMail{
+    height: 49px;
+    display: inline-block;
+    background-color: var(--purple);
+    margin-left: 5px;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.desktop-off {
+    display: none;
+}
+
+
+@media(max-width:992px){
+    .glass h1 {
+        font-size: 3rem;
+    }
+
+    .glass h4 {
+        font-size: 1.5rem;
+    }
+
+    .releaseButton {
+        font-size: 1.35rem;
+    }
+
+    #about .glass{
+        display: block;
+    }
+
+    .mobile-off{
+        display: none;
+    }
+
+    .desktop-off {
+        display: block;
+    }
+
+    .itemMobile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .itemMobile img {
+        max-width: 125px;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+    
+    .inputMail {
+        min-width: 150px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .blockmob {
+        display: block !important;
+    }
+}

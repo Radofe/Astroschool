@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elementos HTML c/ estilo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        ::selection {
+            background-color: var(--cPrin);
+            color: var(--blue);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        :root {
+            --cPrin: #18181b;
+            --cSec: #fff;
+            --blue: aqua;
+        }
+
+        html,
+        body {
+            scroll-behavior: smooth !important;
+        }
+
+        body {
+            background-color: var(--cPrin);
+        }
+
+        .code {
+            background-color: var(--cSec);
+            color: var(--cPrin);
+            padding: 5px;
+            border-radius: 10px;
+            display: block;
+            width: max-content;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .dsc {
+            font-size: 20px;
+        }
+
+        p {
+            font-family: 'Karla', sans-serif;
+        }
+
+        b {
+            color: var(--blue);
+        }
+
+        p,
+        h1,
+        h2,
+        li,
+        h3,
+        h4,
+        h5,
+        h6,
+        th,
+        td {
+            color: var(--cSec);
+        }
+
+        hr {
+            color: var(--cSec);
+        }
+
+        a {
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--blue);
+            background-color: #18181b !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center display-2 mb-5" id="topo">
+                    Elementos HTML
+                </h1>
+
+
+                <h2 class="dsc mb-4">
+                    Os Cabeçalho são utilizados para os títulos <b>COMO LÓGICA</b>. Tamanho de fonte devem ser
+                    realizados com <b>CSS</b>.
+                </h2>
+
+                <h1 class="code">Cabeçalho 1</h1>
+                <h2 class="code">Cabeçalho 2</h2>
+                <h3 class="code">Cabeçalho 3</h3>
+                <h4 class="code">Cabeçalho 4</h4>
+                <h5 class="code">Cabeçalho 5</h5>
+                <h6 class="code">Cabeçalho 6</h6>
+
+                <hr>
+
+                <h2 class="dsc mb-4 mt-3">
+                    Os Parágrafos são utilizados para criação de texto comum.
+                </h2>
+
+                <p class="code">
+                    Este é o parágrafo do meu site!
+                </p>
+
+
+                <h2 class="dsc mb-4 mt-3">
+                    Para quebra de linhas podemos criar 2 parágrafos ou usar a tag <b>br</b> (break row).
+                </h2>
+
+                <p class="code">
+                    Meu texto vai ter uma quebra<br>
+                    de linha
+                </p>
+
+
+                <hr>
+
+                <h2 class="dsc mb-4 mt-3">
+                    Inserção de Imagens
+                </h2>
+
+                <img class="img-fluid" width="150" alt="Icone"
+                    src="https://cdn-icons-png.flaticon.com/512/2721/2721620.png">
+                <img class="img-fluid ms-3" width="150" alt="Icone"
+                    src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png">
+
+
+                <h2 class="dsc mb-4 mt-3">
+                    No parâmetro <b>src</b> da <b>tag img</b>, podemos inserir o caminho de uma imagem <b>local</b> ou o
+                    endereço de uma imagem <b>online</b>.
+                </h2>
+
+
+                <hr>
+
+                <h2 class="dsc mb-4 mt-3">
+                    Os links servem para ancoragem ou redirecionamentos por cliques.
+                </h2>
+
+                <a target="_blank" href="https://www.w3schools.com" class="code">
+                    Esse link leva ao w3schools em outra aba!
+                </a>
+                <br>
+
+                <a href="#topo" class="code">
+                    Esse link leva ao inicio do documento!
+                </a>
+
+
+                <hr>
+
+                <h2 class="dsc mb-4 mt-3">
+                    Temos dois tipos de listas, ordenadas e não ordenadas
+                </h2>
+
+                <ol>
+                    <Li>Item ordenado</Li>
+                    <Li>Item ordenado</Li>
+                    <Li>Item ordenado</Li>
+                </ol>
+
+                <ul>
+                    <Li>Item não ordenado</Li>
+                    <Li>Item não ordenado</Li>
+                    <Li>Item não ordenado</Li>
+                </ul>
+
+                <hr>
+
+                <h2 class="dsc mb-4 mt-3">
+                    Nas tabelas temos o cabeçalho, colunas e linhas
+                </h2>
+
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Cpf</th>
+                                    <th scope="col">Saldo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Lucas</td>
+                                    <td>495.439.032.31</td>
+                                    <td>R$567,87</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Maria</td>
+                                    <td>325.345.675.34</td>
+                                    <td>R$2500,00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Beatriz</td>
+                                    <td>980.987.645.76</td>
+                                    <td>R$849,90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

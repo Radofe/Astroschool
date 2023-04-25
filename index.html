@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Astroschool - Endless Imagination</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"
+        integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="bannerSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12" data-aos="fade-right">
+                    <div class="glass">
+                        <h1>
+                            Astroschool
+                        </h1>
+
+                        <h4>Um mundo de imaginação infinita.</h4>
+
+                        <div class="flex">
+                            <a class="releaseButton" href="#about" alt="Ir para Próxima Sessão">
+                                Libere sua imaginação
+                            </a>
+
+
+                            <div id="animation-container-arrow_animation">
+                                <script>
+                                    var animation = bodymovin.loadAnimation({
+                                        container: document.getElementById('animation-container-arrow_animation'),
+                                        path: 'animations/arrow_animation.json',
+                                        render: 'svg',
+                                        loop: true,
+                                        autoplay: true,
+                                        name: 'Arrow Animation'
+                                    })
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-12" data-aos="fade-left">
+                    <div id="animation-container-astronaut_on_planet">
+                        <script>
+                            var animation = bodymovin.loadAnimation({
+                                container: document.getElementById('animation-container-astronaut_on_planet'),
+                                path: 'animations/astronaut_on_planet.json',
+                                render: 'svg',
+                                loop: true,
+                                autoplay: true,
+                                name: 'Astronaut_on_planet Animation'
+                            })
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="glass" data-aos="fade-up-right">
+                    <div class="col-lg-6 col-12">
+                        <h3>
+                            Afinal, o que é Astroschool?
+                        </h3>
+
+                        <div class="mt-4">
+
+                            <p>A Astroschool é o que você quiser que ela seja! Estamos preparados para levar você a uma
+                                jornada <b>única</b> e <b>empolgante</b> de aprendizado.</p>
+
+                            <p>
+                                Na Astroschool, acreditamos que a <b>imaginação</b> é a chave para explorar novos mundos
+                                e
+                                descobrir novas <b>possibilidades</b>. Com isso em mente, nosso objetivo é ajudar você a
+                                aproveitar sua imaginação e <b>criatividade</b> para melhorar seus estudos e torná-los
+                                mais
+                                <b>envolventes</b> e <b>divertidos</b>.
+                            </p>
+
+                            <p>
+                                Usando o poder do <b>metaverso</b>, a Astroschool oferece uma experiência única de
+                                aprendizado.
+                                Com ambientes <b>imersivos</b> e <b>interativos</b>, você pode explorar e experimentar
+                                conceitos e
+                                ideias de uma maneira completamente nova e <b>envolvente</b>.
+                            </p>
+
+                            <p>
+                                Então, se você está procurando uma maneira <b>inovadora</b> e emocionante de estudar,
+                                junte-se
+                                à Astroschool hoje mesmo e libere sua imaginação! Juntos, podemos criar um <b>futuro
+                                    brilhante</b> e repleto de possibilidades.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div id="animation-container-rocket">
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('animation-container-rocket'),
+                                    path: 'animations/rocket.json',
+                                    render: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: 'Rocket Animation'
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="chars mt-5">
+        <div class="container mt-5" data-aos="zoom-in-down">
+            <div class="row">
+                <div class="col-12 glass">
+                    <h3 class="mb-5">Na Astroschool você pode ser o que quiser!</h3>
+
+                    <div class="carousel js-flickity mobile-off">
+                        <div class="carousel-cell">
+                            <div class="flex">
+                                <img src="imgs/chars/woman.jpg" alt="orange tree" />
+
+                                <p>Assim como a Amanda, que criou seu próprio avatar dentro do nosso universo da maneira
+                                    que ela quis. 🤩</p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="flex">
+                                <img src="imgs/chars/wizard.jpg" alt="orange tree" />
+
+                                <p>Ou o Prof. Lucas, que leciona todas suas atividades utilizando da sua poderosa magia.
+                                    😱</p>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="flex">
+                                <img src="imgs/chars/cat.jpg" alt="orange tree" />
+
+                                <p>E o Jhonatan? Que depois das aulas se torna um perigoso assassino das ruas.<br>
+                                    <b>Cuidado! 😨</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="desktop-off">
+                        <div class="itemMobile">
+                            <div class="flex">
+                                <img src="imgs/chars/woman.jpg" alt="orange tree" />
+
+                                <p>Assim como a Amanda, que criou seu próprio avatar dentro do nosso universo da maneira
+                                    que ela quis. 🤩</p>
+                            </div>
+                        </div>
+                        <div class="itemMobile">
+                            <div class="flex">
+                                <img src="imgs/chars/wizard.jpg" alt="orange tree" />
+
+                                <p>Ou o Prof. Lucas, que leciona todas suas atividades utilizando da sua poderosa magia.
+                                    😱</p>
+                            </div>
+                        </div>
+                        <div class="itemMobile">
+                            <div class="flex">
+                                <img src="imgs/chars/cat.jpg" alt="orange tree" />
+
+                                <p>E o Jhonatan? Que depois das aulas se torna um perigoso assassino das ruas.<br>
+                                    <b>Cuidado! 😨</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5 mb-3" data-aos="flip-left">
+        <div class="container">
+            <div class="row">
+                <div class="glass flex blockmob">
+                    <div class="col-lg-6 col-12">
+                        <h3>
+                            Faça parte do universo Astroschool
+                        </h3>
+                        <div class="flex mt-3">
+
+                            <input id="inputmail" name="email" placeholder="Insira seu email" class="inputMail"
+                                type="email">
+
+                            <button onclick="enviarEmail()" class="buttonMail">
+                                Cadastrar
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div id="animation-container-astronaut">
+                            <script>
+                                var animation = bodymovin.loadAnimation({
+                                    container: document.getElementById('animation-container-astronaut'),
+                                    path: 'animations/astronaut.json',
+                                    render: 'svg',
+                                    loop: true,
+                                    autoplay: true,
+                                    name: 'astronaut Animation'
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="text-center">
+            <p>
+                Astroschool <b id="year"></b> - Todos os Direitos Reservados
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("year").innerHTML = year;
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+        var $carousel = $('.carousel').flickity({
+            imagesLoaded: true,
+            percentPosition: false,
+        });
+
+        var $imgs = $carousel.find('.carousel-cell img');
+        // get transform property
+        var docStyle = document.documentElement.style;
+        var transformProp = typeof docStyle.transform == 'string' ?
+            'transform' : 'WebkitTransform';
+        // get Flickity instance
+        var flkty = $carousel.data('flickity');
+
+        $carousel.on('scroll.flickity', function () {
+            flkty.slides.forEach(function (slide, i) {
+                var img = $imgs[i];
+                var x = (slide.target + flkty.x) * -1 / 3;
+                img.style[transformProp] = 'translateX(' + x + 'px)';
+            });
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function enviarEmail() {
+            var email = document.getElementById('inputmail').value;
+
+            if (email.length >= 7) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Cadastrado com sucesso!',
+                    width: 600,
+                    padding: '3em',
+                    color: '#fff',
+                    background: 'var(--bg)',
+                    backdrop: `rgba(0,0,0,0.4)`
+                })
+
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Email inválido!',
+                    width: 600,
+                    padding: '3em',
+                    color: '#fff',
+                    background: 'var(--bg)',
+                    backdrop: `rgba(0,0,0,0.4)`
+                })
+            }
+
+            document.getElementById('inputmail').value = "";
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
